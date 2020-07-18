@@ -1,0 +1,258 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%S;
+  background-color: #080F28;
+  margin: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  background-size: 100% 110%;
+}
+
+body .body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column, wrap;
+          flex-flow: column, wrap;
+  margin: 0;
+}
+
+.nav {
+  background-color: #4FACFF;
+  width: 100%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row, nowrap;
+  flex-flow: row, nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav__h1 {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 300%;
+}
+
+.nav__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row, nowrap;
+  flex-flow: row, nowrap;
+  text-align: space-around;
+}
+
+.nav__div__search {
+  display: none;
+  height: 40px;
+  width: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-right: 135px;
+  visibility: hidden;
+}
+
+.nav__div__search__i {
+  background-color: #FFFFFF;
+  height: 30px;
+  line-height: 3em;
+  font-family: 'Ubuntu', sans-serif;
+  border: 2px solid #f2f2f2;
+  outline: none;
+}
+
+.nav__div__search__input {
+  line-height: 3em;
+  font-family: 'Ubuntu', sans-serif;
+  border: 2px solid #f2f2f2;
+  outline: none;
+}
+
+.nav__div__favorites_button,
+.nav__div__log_out_button {
+  margin-right: 5px;
+  height: 40px;
+  width: 110px;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  color: slategrey;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+
+.movie {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.movie__i {
+  background-color: #FFFFFF;
+  line-height: 3em;
+  font-family: 'Ubuntu', sans-serif;
+  border: 2px solid #f2f2f2;
+  outline: none;
+}
+
+.movie__input {
+  width: 25%;
+  line-height: 3em;
+  border-radius: 0, 5px, 5px, 0;
+  font-family: 'Ubuntu', sans-serif;
+  border: 2px solid #f2f2f2;
+  outline: none;
+}
+
+.warning {
+  margin-top: 10px;
+}
+
+.warning__input_empty {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: red;
+  margin: auto;
+  visibility: hidden;
+  font-size: large;
+}
+
+.no_movies_found {
+  background: #7779e4;
+  border: 1px solid #dab767;
+  color: #1c1e23;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin: 20px 0;
+  visibility: hidden;
+}
+
+.no_favorites {
+  background: #7779e4;
+  border: 1px solid #dab767;
+  color: #1c1e23;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin: 20px 0;
+  display: none;
+}
+
+.gridMoviesResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gridMoviesResult__div {
+  margin-left: 15px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gridMoviesResult__div__container {
+  width: 250px;
+}
+
+.gridMoviesResult__div__info {
+  max-width: 75%;
+  display: none;
+  margin-left: 10px;
+}
+
+.gridMoviesResult__div__info__title {
+  color: #FFFFFF;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.gridMoviesResult__div__info__main {
+  margin-top: 10px;
+  font-family: Open Sans, sans-serif;
+  font-size: 13px;
+}
+
+.gridMoviesResult__div__info__span {
+  color: #fff;
+  font-weight: 700;
+}
+
+.gridMoviesResult__div__info__span__content {
+  color: #528fa0;
+}
+
+.gridMoviesResult__div__a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.gridMoviesResult__div__a__img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.gridMoviesResult__div__a__p {
+  color: white;
+  width: 100%;
+}
+
+.gridMoviesResult__div__a__button {
+  width: 75%;
+  height: 30px;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+  background-color: red;
+}
+/*# sourceMappingURL=movies.css.map */

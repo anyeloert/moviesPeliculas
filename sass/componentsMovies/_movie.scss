@@ -1,0 +1,22 @@
+.movie {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    &__i {
+        background-color: #FFFFFF;
+        line-height: 3em;
+        font-family: 'Ubuntu', sans-serif;
+        border: 2px solid #f2f2f2;
+        outline: none;
+    }
+    &__input {
+        width: 25%;
+        line-height: 3em;
+        border-radius: 0, 5px, 5px, 0;
+        font-family: 'Ubuntu', sans-serif;
+        border: 2px solid #f2f2f2;
+        outline: none;
+    }
+}

@@ -1,0 +1,35 @@
+.warning {
+    margin-top: 10px;
+    &__input_empty {
+        width: fit-content;
+        color: red;
+        margin: auto;
+        visibility: hidden;
+        font-size: large;
+        ;
+    }
+}
+
+.no_movies_found {
+    background: #7779e4;
+    border: 1px solid #dab767;
+    color: #1c1e23;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin: 20px 0;
+    visibility: hidden;
+}
+
+.no_favorites {
+    background: #7779e4;
+    border: 1px solid #dab767;
+    color: #1c1e23;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin: 20px 0;
+    display: none;
+}

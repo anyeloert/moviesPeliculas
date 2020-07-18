@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EAChB,gBAAgB,EAAE,aAAa;CAClC",
+    "sources": [
+        "../sass/componentsMovies/gridSearchMovies.scss"
+    ],
+    "names": [],
+    "file": "gridSearchMovies.css"
+}

@@ -1,0 +1,81 @@
+.nav {
+    background-color: #4FACFF;
+    width: 100%;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row, nowrap;
+    flex-flow: row, nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav__h1 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 300%;
+}
+
+.nav__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row, nowrap;
+    flex-flow: row, nowrap;
+    text-align: space-around;
+}
+
+.nav__div__search {
+    display: none;
+    height: 40px;
+    width: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-right: 135px;
+    visibility: hidden;
+}
+
+.nav__div__search__i {
+    background-color: #FFFFFF;
+    height: 30px;
+    line-height: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid #f2f2f2;
+    outline: none;
+}
+
+.nav__div__search__input {
+    line-height: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid #f2f2f2;
+    outline: none;
+}
+
+.nav__div__favorites_button,
+.nav__div__log_out_button {
+    margin-right: 5px;
+    height: 40px;
+    width: 110px;
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    color: slategrey;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/movies.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="/scripts/redirecToIndex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="body">
+        <div class="nav">
+            <h1 class="nav__h1">
+                Welcome
+            </h1>
+            <div class="nav__div">
+                <div class="nav__div__search">
+                    <button class="nav__div__search__button"><i class="fa fa-search fa-2x nav__div__search__i" aria-hidden="true"></i></button>
+                    <input type="text" class="nav__div__search__input">
+                </div>
+                <input type="button" value="Favoritos" class="nav__div__favorites_button">
+                <input type="button" value="Cerrar Sesión" class="nav__div__log_out_button">
+            </div>
+        </div>
+        <div class="warning">
+            <p class="warning__input_empty">
+                Please fill in the field
+            </p>
+        </div>
+        <div class="no_movies_found">No movies Found</div>
+        <div class="no_favorites">No favorites yet</div>
+    </div>
+    <script src="/scripts/gridSearchedMovies.js"></script>
+    <script src="/scripts/movies.js"></script>
+    <script src="/scripts/favorites.js"></script>
+</body>
+
+</html>

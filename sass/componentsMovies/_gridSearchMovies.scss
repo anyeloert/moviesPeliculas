@@ -1,0 +1,60 @@
+.gridMoviesResult {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__div {
+        margin-left: 15px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &__container {
+            width: 250px;
+        }
+        &__info {
+            max-width: 75%;
+            display: none;
+            margin-left: 10px;
+            &__title {
+                color: #FFFFFF;
+                font-size: 22px;
+                margin-bottom: 10px
+            }
+            &__main {
+                margin-top: 10px;
+                font-family: Open Sans, sans-serif;
+                font-size: 13px;
+            }
+            &__span {
+                color: #fff;
+                font-weight: 700;
+            }
+            &__span__content {
+                color: #528fa0
+            }
+        }
+        &__a {
+            width: 100%;
+            text-decoration: none;
+            &__img {
+                width: 250px;
+                border-radius: 5px;
+            }
+            &__p {
+                color: white;
+                width: 100%;
+            }
+            &__button {
+                width: 75%;
+                height: 30px;
+                border: 1px solid #f2f2f2;
+                border-radius: 20px;
+                color: white;
+                text-transform: uppercase;
+                font-family: 'Ubuntu', sans-serif;
+                cursor: pointer;
+                background-color: red;
+            }
+        }
+    }
+}

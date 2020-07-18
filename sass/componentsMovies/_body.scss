@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%S;
+    // background: url('http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg');
+    background-color: #080F28;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    background-size: 100% 110%;
+    .body {
+        flex-flow: column, wrap;
+        margin: 0;
+    }
+}
