@@ -1,4 +1,4 @@
-##Proyecto Buscador de Películas##
+Proyecto Buscador de Películas
 
 Tecnologías Utilizadas
 
