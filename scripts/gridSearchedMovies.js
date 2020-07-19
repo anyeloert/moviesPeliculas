@@ -7,11 +7,11 @@ let userFavorites = JSON.parse(localStorage.getItem(userPassword));
 const favoriteButtonValue = (favoriteOrSearched, movie) => {
     if (favoriteOrSearched === 'searched'){
         if (userFavorites === null || userFavorites.includes(movie.imdbID) === false){            
-           return 'Añadir a Favoritos'
+           return 'Add to favorites'
         }else if (userFavorites.includes(movie.imdbID)){
-            return 'Quitar de favoritos'
+            return 'Remove from favorites'
         }  
-    }else return 'Quitar de favoritos'
+    }else return 'Remove from favorites'
 }
 
 //Metodo para las acciones de los botones añadir favoritos
@@ -181,7 +181,6 @@ const gridSearchedMovies = async queryResult => {
     const gridMoviesResult = document.createElement('div')
     gridMoviesResult.classList.add('gridMoviesResult') 
     const moviesData = queryResult.data.Search 
-    console.log(moviesData);
     // crear toda la maqueta de las peliculas de la busqueda
     moviesData.forEach( async movie => gridMoviesResult.appendChild( await gridMoviesFavoritesOrSearched('searched', movie, gridMoviesResult)))
     body.appendChild(gridMoviesResult)

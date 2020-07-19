@@ -21,6 +21,7 @@ logOut.addEventListener('click', () => {
 
 //logica para hacer peticion a la API de OMDB
 const handleClickSearchButton = async inputValue  =>  {
+    console.log(page);
     
     const urlSearch = `https://www.omdbapi.com/?s=${inputValue}&apikey=1d0b1392&plot=full&page=${page}`
     const searchResult = await axios.get(urlSearch)
@@ -81,14 +82,19 @@ if (searchButton){
 
 //buscador del navbar
 searchButtonNav.addEventListener('click', () => {
-    const gridMoviesResult = document.querySelector('.gridMoviesResult') 
+    const gridMoviesResult = document.querySelectorAll('.gridMoviesResult') 
+    console.log(gridMoviesResult);
     const noMoviesFound = document.querySelector('.no_movies_found').style
     if (document.querySelector('.no_favorites')){
 
         let nofavoritesWarning = document.querySelector('.no_favorites').style
         if (nofavoritesWarning.display !== 'none') nofavoritesWarning.display ='none'
     }
-    if (gridMoviesResult) body.removeChild(gridMoviesResult)
+    for (const gridmovie of gridMoviesResult){
+
+        body.removeChild(gridmovie)
+    }
+    
     if (noMoviesFound.visibility === 'visible' ) noMoviesFound.visibility ='hidden'
     
     
@@ -102,7 +108,8 @@ searchButtonNav.addEventListener('click', () => {
 //codigo que detecta el fin de pagina y carga mas elementos
 const findPageEnd = () => {
     window.addEventListener('scroll',async () => {
-        if(window.scrollY + window.innerHeight === body.clientHeight){        
+        if(window.scrollY + window.innerHeight === body.clientHeight){  
+            console.log(page);      
             queryResult =await handleClickSearchButton(localStorage.getItem('inputValue'))
             if(queryResult.data.Response === 'False'){
                 const noMoreMovies = document.createElement('div')
